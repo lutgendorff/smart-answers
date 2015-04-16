@@ -606,7 +606,7 @@ outcome :outcome_os_consular_cni do
     elsif not_italy_or_spain && ceremony_not_germany_or_not_resident_other
       phrases << :consular_cni_os_ceremony_not_spain_or_italy
       if ceremony_country == 'macedonia' && !data_query.non_commonwealth_country?(residency_country)
-        phrases << :consular_cni_os_foreign_resident_ceremony_not_germany_italy
+        phrases << :living_in_ceremony_country_3_days
       end
     end
 
